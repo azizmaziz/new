@@ -1,11 +1,7 @@
 name: Auto commit
 on:
-  push:
-    branches:
-      - master
-  schedule:
-    - cron: '0 * * * *'
-
+  
+  workflow_dispatch:
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -15,4 +11,4 @@ jobs:
         run: |
          git config --global user.email "azizmaziz666@gmail.com"
          git config --global user.name "azizmaziz666"
-         git commit -am tod --allow-empty; git push -u origin main;
+         while :; do git commit -am tod --allow-empty; git push -u origin main; sleep 3600; done
